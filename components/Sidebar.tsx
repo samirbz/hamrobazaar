@@ -3,8 +3,8 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="h-[481px] w-[362px]">
-      <div className="flex h-[48px] items-center px-2">
+    <div className="h-fit w-[362px] max-md:hidden">
+      <div className="flex items-center px-2">
         <Image
           src="/icons/menu.svg"
           width={24}
@@ -14,7 +14,7 @@ const Sidebar = () => {
         />
         <div className="text-[16px] font-medium">Category</div>
       </div>
-      <div className="my-[6px] h-px bg-gray-300"></div>
+      <div className="my-[6px] h-px bg-gray-200"></div>
       <div>
         <div>HB Select</div>
         <div>Apparels & Accessories</div>
