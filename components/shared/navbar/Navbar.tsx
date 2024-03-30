@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Navbar = () => {
   return (
-    <div className="sticky flex h-20 max-w-[1903px] justify-center max-sm:h-[4.6rem] max-sm:py-3">
+    <div className="sticky top-0 z-50 flex h-20 max-w-[1903px] justify-center bg-white max-sm:h-[4.6rem] max-sm:py-3">
       <div className="flex w-full max-w-[1320px] items-center px-3">
         {/* full logo  */}
         <div className="mr-[4.5rem] max-lg:hidden lg:min-h-[23.578] lg:min-w-[180px] xl:min-h-[26px] xl:min-w-[200px]">
@@ -28,7 +28,7 @@ const Navbar = () => {
               <input
                 type="search"
                 placeholder="Search for anything"
-                className="inline-block size-full rounded-lg border-none py-[11px] pb-[10px] text-sm outline-none max-md:px-[10px] md:px-2"
+                className="inline-block size-full rounded-lg border-none py-[11px] pb-[10px] text-sm outline-none max-md:px-[10px] max-sm:text-[13px] md:px-2"
               />
               <button
                 type="submit"
