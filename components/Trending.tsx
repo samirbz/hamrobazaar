@@ -1,8 +1,9 @@
 import React from "react";
+import Card from "./Card";
 
 const Trending = () => {
   return (
-    <div className="flex h-[333px] flex-col md:pl-4 ">
+    <div className="flex h-[303px] flex-col md:pl-4 ">
       <div className="flex h-[40px] items-center justify-between">
         <div className="flex gap-2">
           <svg
@@ -31,7 +32,10 @@ const Trending = () => {
           Boost Ads
         </button>
       </div>
-      <div className="my-[6px]  h-px bg-gray-300"></div>
+      <div className="my-[6px] h-px bg-gray-300"></div>
+      <div className="flex justify-start overflow-auto">
+        <Card />
+      </div>
     </div>
   );
 };

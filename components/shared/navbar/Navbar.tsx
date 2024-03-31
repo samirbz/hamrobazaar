@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import TopCategories from "@/components/TopCategories";
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-50 flex h-20 max-w-[1903px] justify-center bg-white max-sm:h-[4.6rem] max-sm:py-3">
-      <div className="flex w-[1320px] max-w-full  items-center px-3">
+    <div className="sticky top-0 z-50 flex h-20 max-w-[1903px] flex-col items-center justify-center bg-white max-md:h-[120px] max-sm:py-3">
+      <div className="flex w-[1320px] max-w-full  items-center px-3 max-md:py-4">
         {/* full logo  */}
         <div className="mr-[4.5rem] max-lg:hidden lg:min-h-[23.578] lg:min-w-[180px] xl:min-h-[26px] xl:min-w-[200px]">
           <Image
@@ -60,14 +61,18 @@ const Navbar = () => {
           </button>
 
           <div className="mr-[1.625rem] h-0 w-6 rotate-90 border border-black max-md:mr-3"></div>
-          <div className="mr-2 mt-px w-[80px] px-2 py-[6.4px] text-sm hover:text-blue-400 max-md:flex max-md:justify-center max-md:rounded-md max-md:border max-md:border-black">
+          <div className="mr-2 mt-px w-[80px] cursor-pointer px-2 py-[6.4px] text-sm hover:text-blue-400 max-md:flex max-md:justify-center max-md:rounded-md max-md:border max-md:border-black">
             Login
           </div>
-          <div className="mr-2 flex h-[35.78px] w-20 justify-center whitespace-nowrap rounded-md border border-black px-2 py-[6.4px] text-sm hover:bg-black hover:text-white max-md:hidden">
+          <div className="mr-2 flex h-[35.78px] w-20 cursor-pointer justify-center whitespace-nowrap rounded-md border border-black px-2 py-[6.4px] text-sm hover:bg-black hover:text-white max-md:hidden">
             <span className="mt-px ">Sign Up</span>
           </div>
         </div>
       </div>
+      <div className="flex w-[1320px] max-w-full items-center px-3 md:hidden">
+        <TopCategories />
+      </div>
+      <div className="mt-[6px] h-px w-screen bg-gray-300 md:hidden">&nbsp;</div>
     </div>
   );
 };

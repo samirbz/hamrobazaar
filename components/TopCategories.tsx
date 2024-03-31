@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const TopCategories = () => {
   return (
-    <div className="flex h-[48px] items-center justify-between ">
-      <div className="mr-4 pl-4">
+    <div className="flex h-[48px] items-center justify-between max-md:h-[35px] ">
+      <div className="mr-4 pl-4 max-md:pl-0">
         <h2 className="min-w-[116px] max-lg:hidden">Top Categories</h2>
         <Image
           src="/icons/menu.svg"
@@ -16,7 +16,9 @@ const TopCategories = () => {
         />
       </div>
       <div className="">
-        <button className="topCategories-btn">Category menu</button>
+        <button className="topCategories-btn bg-gray-100 text-sm">
+          Mobile
+        </button>
       </div>
       <div className="mr-3">
         <SavedBtn />
