@@ -4,7 +4,7 @@ import React from "react";
 const Sidebar = () => {
   return (
     <div className="h-fit w-[362px] max-md:hidden">
-      <div className="flex items-center px-2">
+      <div className="flex h-[48px] items-center px-2">
         <Image
           src="/icons/menu.svg"
           width={24}
@@ -12,7 +12,7 @@ const Sidebar = () => {
           alt="menu"
           className="mr-2 size-[24px]"
         />
-        <div className="text-[16px] font-medium">Category</div>
+        <h2 className="font-medium">Category</h2>
       </div>
       <div className="my-[6px] h-px bg-gray-200"></div>
       <div>

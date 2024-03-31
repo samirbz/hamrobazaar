@@ -1,35 +1,24 @@
 import React from "react";
 import SavedBtn from "./ui/SavedBtn";
+import Image from "next/image";
 
 const TopCategories = () => {
   return (
-    <div className="flex items-center  pl-4  ">
-      <div className="flex items-center">
-        <h2 className="whitespace-nowrap ">Top Categories</h2>
-
-        <div className="hideScrollbar flex overflow-x-auto ">
-          <button className="mr-2 shrink-0 rounded-md border border-gray-200 p-1">
-            Electronics, TVs, & More
-          </button>
-          <button className="mr-2 shrink-0 rounded-md border border-gray-200 p-1">
-            Electronics, TVs, & More
-          </button>
-          <button className="mr-2 shrink-0 rounded-md border border-gray-200 p-1">
-            Electronics, TVs, & More
-          </button>
-          <button className="mr-2 shrink-0 rounded-md border border-gray-200 p-1">
-            Electronics, TVs, & More
-          </button>
-          <button className="mr-2 shrink-0 rounded-md border border-gray-200 p-1">
-            Electronics, TVs, & More
-          </button>
-          <button className="mr-2 shrink-0 rounded-md border border-gray-200 p-1">
-            Electronics, TVs, & More
-          </button>
-        </div>
+    <div className="flex h-[48px] items-center justify-between ">
+      <div className="mr-4 pl-4">
+        <h2 className="min-w-[116px] max-lg:hidden">Top Categories</h2>
+        <Image
+          src="/icons/menu.svg"
+          width={24}
+          height={24}
+          alt="menu icon"
+          className="min-w-[24px] lg:hidden"
+        />
       </div>
-
-      <div>
+      <div className="">
+        <button className="topCategories-btn">Category menu</button>
+      </div>
+      <div className="mr-3">
         <SavedBtn />
       </div>
     </div>

@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.hideScrollbar::-webkit-scrollbar {
-  display: none;
+@layer components {
+  .hideScrollbar {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .full--aside {
+    display: flex;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    width: calc(72% - 1em);
+  }
+}
+
+@layer utilities {
+  .topCategories-btn {
+    @apply border border-gray-300 rounded-md px-4 py-1 cursor-pointer transition-all duration-300 w-auto mr-3 inline-block;
+  }
 }
