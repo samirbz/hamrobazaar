@@ -4,7 +4,7 @@ import Trending from "./Trending";
 
 const FullAside = () => {
   return (
-    <div className="full--aside">
+    <div className="flex w-full flex-wrap">
       <div className="w-full">
         <div className="max-md:hidden">
           <TopCategories />

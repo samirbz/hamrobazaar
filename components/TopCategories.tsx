@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const TopCategories = () => {
   return (
-    <div className="flex h-[48px] items-center justify-between max-md:h-[35px] ">
+    <div className="relative flex h-[48px] w-full items-center justify-between overflow-hidden max-md:h-[35px] ">
       <div className="mr-4 pl-4 max-md:pl-0">
         <h2 className="min-w-[116px] max-lg:hidden">Top Categories</h2>
         <Image
@@ -15,12 +15,20 @@ const TopCategories = () => {
           className="min-w-[24px] lg:hidden"
         />
       </div>
-      <div className="">
-        <button className="topCategories-btn bg-gray-100 text-sm">
-          Mobile
+      <div className="hideScrollbar absolute left-[150px] w-[68%] overflow-x-scroll whitespace-nowrap max-lg:left-[50px] max-md:left-[30px] max-sm:w-full">
+        <button className="topCategories-btn">Electronics, TVs, & More</button>
+        <button className="topCategories-btn">
+          Mobile Phones & Accessories
         </button>
+        <button className="topCategories-btn">
+          Mobile Phones & Accessories
+        </button>
+        <button className="topCategories-btn">
+          Want To Buy (Buyer&apos;s List)
+        </button>
+        <button className="topCategories-btn">Business & Industrial</button>
       </div>
-      <div className="mr-3">
+      <div className="mr-3 max-sm:hidden">
         <SavedBtn />
       </div>
     </div>

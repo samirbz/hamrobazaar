@@ -3,7 +3,7 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar max-md:hidden">
+    <div className="h-full w-[39%] max-md:hidden">
       <div className="flex h-[48px] items-center px-2">
         <Image
           src="/icons/menu.svg"
