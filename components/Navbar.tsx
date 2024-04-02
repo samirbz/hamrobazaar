@@ -3,7 +3,7 @@ import Image from "next/image";
 import TopCategories from "@/components/TopCategories";
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-50 flex h-20 max-w-[1903px] flex-col items-center justify-center bg-white max-md:h-[120px] max-sm:py-3">
+    <div className="sticky top-0 z-50 flex h-20 max-w-[1903px] flex-col items-center justify-center bg-white max-md:h-[120px] max-sm:py-3 max-xs:max-h-[115px] ">
       <div className="flex w-[1320px] max-w-full  items-center px-3 max-md:py-4">
         {/* full logo  */}
         <div className="mr-[4.5rem] max-lg:hidden lg:min-h-[23.578] lg:min-w-[180px] xl:min-h-[26px] xl:min-w-[200px]">

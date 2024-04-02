@@ -7,7 +7,7 @@ import RightAd from "./RightAd";
 const FullAside = () => {
   return (
     <div className="flex w-full flex-wrap">
-      <div className="w-full">
+      <div className="flex w-full flex-col">
         <div className="max-md:hidden">
           <TopCategories />
         </div>
@@ -16,7 +16,7 @@ const FullAside = () => {
         <div className="my-4 h-px w-full bg-gray-200"></div>
         <div className="flex">
           <HomeListing />
-          <div className="h-screen w-px bg-gray-300"></div>
+          <div className="h-screen w-px bg-gray-300 max-xl:hidden"></div>
           <RightAd />
         </div>
       </div>
