@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import SidebarList from "./ui/SidebarList";
+import SidebarList from "./ui/SidebarListAll";
 
 const Sidebar = () => {
   return (
@@ -22,7 +22,7 @@ const Sidebar = () => {
       </div>
 
       {/* SIDEBAR LIST  */}
-      <div className="hideScrollbar h-screen overflow-y-scroll">
+      <div className="h-full overflow-y-scroll">
         <SidebarList />
       </div>
     </div>
