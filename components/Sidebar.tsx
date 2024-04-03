@@ -24,28 +24,6 @@ const Sidebar = () => {
       {/* SIDEBAR LIST  */}
       <div className="hideScrollbar h-screen overflow-y-scroll">
         <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
-        <SidebarList />
       </div>
     </div>
   );
