@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeHeader = () => {
   return (
-    <div className="sticky top-20 z-10 flex h-12 w-full items-center gap-10 max-xs:gap-1">
+    <div className="sticky top-20 z-10 flex h-12 w-full items-center gap-10 bg-white max-md:top-[120px] max-sm:top-[112.5px] max-xs:gap-1">
       <div className="mb-[3px]  flex pb-[7px]">
         <svg
           width="24"
