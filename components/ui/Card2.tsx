@@ -3,23 +3,28 @@ import Image from "next/image";
 
 const Card2 = () => {
   return (
-    <div className="flex min-w-[120px] flex-col gap-3 rounded-md  p-2 transition-all duration-500 hover:border hover:border-blue-800">
-      <div className="flex w-full items-start gap-2.5">
-        <Image
-          src="https://picsum.photos/130/122"
-          width={130}
-          height={122}
-          alt="image"
-          className="h-[122px] w-[130px] rounded-md"
-        />
-
-        {/* <Image
-          src="https://picsum.photos/130/122"
-          width={24}
-          height={22}
-          alt="image"
-          className="rounded-md"
-        /> */}
+    <div className="flex min-w-[120px] flex-col gap-3 rounded-md   transition-all duration-500 ">
+      <div className="flex w-full cursor-pointer justify-start gap-2.5 p-2 transition-all duration-700 hover:rounded-lg hover:border hover:border-[#0170b4] hover:bg-[rgba(1,112,180,.08)]">
+        <div className="flex flex-col items-center">
+          <div className="w-[130px] ">
+            <Image
+              src="https://picsum.photos/130/122"
+              width={130}
+              height={122}
+              alt="image"
+              className="rounded-md"
+            />
+          </div>
+          <div className="mt-[6.4px] w-[24px]">
+            <Image
+              src="https://picsum.photos/130/122"
+              width={24}
+              height={22}
+              alt="image"
+              className="rounded-md"
+            />
+          </div>
+        </div>
         <div className="flex w-full flex-col ">
           <div className="mb-[6px] flex  justify-between">
             <h3 className="text-[13px] font-semibold leading-4">
@@ -62,6 +67,7 @@ const Card2 = () => {
           <span className="text-xs">Sameer bajracharya</span>
         </div>
       </div>
+      <div className="my-[15px] h-px w-full bg-gray-300 pl-2 pr-4"></div>
     </div>
   );
 };

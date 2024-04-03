@@ -6,7 +6,7 @@ const HbBody = () => {
   return (
     <div className="flex ">
       <Sidebar />
-      <div className="h-screen w-px bg-gray-300 max-md:hidden"></div>
+      <div className="h-full w-px bg-gray-300 max-md:hidden"></div>
       <FullAside />
     </div>
   );
