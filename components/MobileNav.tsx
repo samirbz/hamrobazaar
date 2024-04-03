@@ -2,7 +2,7 @@ import React from "react";
 
 const MobileNav = () => {
   return (
-    <div className="sticky bottom-0 z-10 flex w-full items-center justify-evenly bg-[#f0f0f0] p-[0.5em] max-xs:w-[285px] sm:hidden">
+    <div className="sticky bottom-0 z-10 flex items-center justify-evenly bg-[#f0f0f0] p-[0.5em] sm:hidden">
       <div>
         <svg
           width={21}
