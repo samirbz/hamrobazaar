@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import Card from "./ui/Card";
 
 const Trending = () => {
   return (
@@ -34,6 +34,8 @@ const Trending = () => {
       </div>
       <div className="my-[6px] h-px bg-gray-300"></div>
       <div className="flex justify-start overflow-auto">
+        <Card />
+        <Card />
         <Card />
       </div>
     </div>

@@ -3,14 +3,14 @@ import Image from "next/image";
 
 const Card2 = () => {
   return (
-    <div className="flex h-[250] w-[146px] flex-col gap-3 rounded-md  transition-all duration-500 hover:border hover:border-blue-800">
-      <div className="flex items-start gap-2.5">
+    <div className="flex min-w-[120px] flex-col gap-3 rounded-md  p-2 transition-all duration-500 hover:border hover:border-blue-800">
+      <div className="flex w-full items-start gap-2.5">
         <Image
           src="https://picsum.photos/130/122"
           width={130}
           height={122}
           alt="image"
-          className="rounded-md"
+          className="h-[122px] w-[130px] rounded-md"
         />
 
         {/* <Image
@@ -20,8 +20,8 @@ const Card2 = () => {
           alt="image"
           className="rounded-md"
         /> */}
-        <div className="flex flex-col">
-          <div className="mb-[6px] flex w-96 justify-between">
+        <div className="flex w-full flex-col ">
+          <div className="mb-[6px] flex  justify-between">
             <h3 className="text-[13px] font-semibold leading-4">
               Land Cruiser prado
             </h3>
