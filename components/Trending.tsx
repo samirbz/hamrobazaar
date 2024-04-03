@@ -3,7 +3,7 @@ import Card from "./ui/Card";
 
 const Trending = () => {
   return (
-    <div className="flex h-[303px] flex-col md:pl-4 ">
+    <div className="relative flex h-[303px] flex-col overflow-hidden md:pl-4">
       <div className="flex h-[40px] items-center justify-between">
         <div className="flex gap-2">
           <svg
@@ -33,7 +33,16 @@ const Trending = () => {
         </button>
       </div>
       <div className="my-[6px] h-px bg-gray-300"></div>
-      <div className="flex justify-start overflow-auto">
+      <div className="hideScrollbar absolute top-[55px] flex w-full overflow-x-scroll">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
         <Card />
         <Card />
         <Card />
