@@ -2,18 +2,17 @@
 import React, { useState, useEffect } from "react";
 
 const MobileNav = () => {
-  const [showButton, setShowButton] = useState(false);
+  const [showButton, setShowButton] = useState(true); // Initially set to true to show the button
   const [prevScrollY, setPrevScrollY] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       if (scrollY > prevScrollY) {
         // Scrolling down
-        setShowButton(true);
+        setShowButton(false); // Show the button when scrolling up
       } else {
         // Scrolling up
-        setShowButton(false);
+        setShowButton(true); // Hide the button when scrolling down
       }
       setPrevScrollY(scrollY);
     };
