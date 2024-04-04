@@ -4,9 +4,9 @@ import SidebarList from "./ui/SidebarListAll";
 
 const Sidebar = () => {
   return (
-    <div className="sticky top-20 z-10 h-screen w-[39%]  max-md:hidden">
+    <div className="sticky top-20 z-20 h-screen w-[39%] overflow-hidden whitespace-nowrap max-md:hidden ">
       {/* SIDEBAR HEADER  */}
-      <div className=" bg-white">
+      <div className=" sticky top-0 z-20 bg-white">
         <div className="flex h-[48px] items-center px-2">
           <Image
             src="/icons/menu.svg"
@@ -22,7 +22,7 @@ const Sidebar = () => {
       </div>
 
       {/* SIDEBAR LIST  */}
-      <div className="h-full overflow-y-scroll">
+      <div className="hideScrollbar h-[83vh] overflow-y-scroll">
         <SidebarList />
       </div>
     </div>

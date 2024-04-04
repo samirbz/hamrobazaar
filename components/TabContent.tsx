@@ -20,6 +20,19 @@ const TabContent = () => {
       <Card2 />
       <Card2 />
       <Card2 />
+      <Card2 />
+      <Card2 />
+      <Card2 />
+      <Card2 />
+      <Card2 />
+      <Card2 />
+      <Card2 />
+      <Card2 />
+      <Card2 />
+      <Card2 />
+      <Card2 />
+      <Card2 />
+      <Card2 />
     </div>
   );
 };

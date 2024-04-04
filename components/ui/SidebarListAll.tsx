@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const SidebarList = () => {
   return (
-    <div className=" pr-2">
+    <div className="flex flex-col items-start justify-start pr-2 transition-all duration-300">
       {/* HB Select  */}
-      <div className="flex items-center justify-between p-2">
+      <div className="flex w-full items-center justify-between p-2">
         <div className="flex h-[17px] items-center">
           <span className="mr-2">
             <Image
@@ -40,7 +40,7 @@ const SidebarList = () => {
       </div>
       <div className="my-[6px] h-px w-full bg-gray-300"></div>
       {/* APPARELS & ACCESORIES  */}
-      <div className="flex items-center justify-between p-2">
+      <div className="flex w-full items-center justify-between p-2">
         <div className="flex h-[17px] items-center">
           <span className="mr-2">
             <Image
@@ -427,7 +427,7 @@ const SidebarList = () => {
       </div>
       <div className="my-[6px] h-px w-full bg-gray-300"></div>
       {/* Mobile Phones & Accessories  */}
-      <div className="flex items-center justify-between p-2">
+      <div className="flex w-full items-center justify-between p-2">
         <div className="flex h-[17px] items-center">
           <span className="mr-2">
             <Image
