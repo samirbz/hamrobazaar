@@ -1,9 +1,13 @@
+"use client";
 import React from "react";
 import Card from "./ui/Card";
+import GoLeftRight from "./ui/GoLeftRight"; // Import the GoLeftRight component
 
 const Trending = () => {
   return (
-    <div className="relative flex h-[303px] flex-col overflow-hidden md:pl-4">
+    <div className="group relative flex h-[303px] flex-col md:pl-4">
+      {/* Render the GoLeftRight component */}
+      <GoLeftRight />
       <div className="flex h-[40px] items-center justify-between">
         <div className="flex gap-2">
           <svg
@@ -33,7 +37,10 @@ const Trending = () => {
         </button>
       </div>
       <div className="my-[6px] h-px bg-gray-300"></div>
-      <div className="hideScrollbar absolute top-[55px] flex w-full overflow-x-scroll">
+      <div
+        id="scrollableContainer"
+        className="hideScrollbar absolute top-[55px] flex w-[98.3%] overflow-x-scroll"
+      >
         <Card />
         <Card />
         <Card />
