@@ -118,7 +118,7 @@ const sidebarItems = [
 
 const SidebarList = () => {
   return (
-    <div className="flex flex-col items-start justify-start pr-2 transition-all duration-300">
+    <div className="flex w-full flex-col items-start justify-between pr-2 transition-all duration-300">
       {sidebarItems.map((item, index) => (
         <React.Fragment key={index}>
           <div className="flex w-full items-center justify-between p-2">
