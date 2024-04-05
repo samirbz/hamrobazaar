@@ -25,7 +25,7 @@ const MobileNav = () => {
 
   return (
     <div
-      className={`fixed  bottom-0 z-10 flex w-full items-center justify-evenly bg-[#f0f0f0] p-[0.5em] max-xs:w-[308px] sm:hidden ${showButton ? "block" : "hidden"} `}
+      className={`fixed  bottom-0 z-10 flex w-full items-center justify-evenly bg-[#f0f0f0] p-[0.5em] max-xs:w-[308px] sm:hidden ${showButton ? "translate-y-0 transition-transform duration-300 ease-in-out" : "translate-y-full transition-transform duration-300 ease-in-out"} `}
     >
       <svg width={21} height={20} viewBox="0 0 21 20" fill="none" className="">
         <path

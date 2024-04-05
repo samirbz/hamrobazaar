@@ -7,8 +7,7 @@ const GoTop = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      if (scrollY > 100) {
-        // Change this threshold as needed
+      if (scrollY > 3000) {
         setShowButton(true);
       } else {
         setShowButton(false);
@@ -30,7 +29,8 @@ const GoTop = () => {
 
   return (
     <div
-      className={`fixed bottom-[30px] right-[5%] z-10 inline-flex size-[30px] cursor-pointer items-center justify-center rounded-full bg-[#333333] ${showButton ? "block" : "hidden"} max-md:bottom-[70px]`}
+      className={`fixed bottom-[30px] right-[5%] z-10 inline-flex size-[30px] cursor-pointer items-center justify-center rounded-full bg-[#333333] ${showButton ? "animate-showEffect" : "animate-hideEffect"} max-md:bottom-[70px]`}
+      onClick={scrollToTop}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,6 @@ const GoTop = () => {
         strokeWidth="1.5"
         stroke="white"
         className="size-4"
-        onClick={scrollToTop}
       >
         <path
           strokeLinecap="round"

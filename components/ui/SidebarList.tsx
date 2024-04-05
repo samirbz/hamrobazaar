@@ -123,7 +123,7 @@ const SidebarList = () => {
         <React.Fragment key={index}>
           <div className="flex w-full items-center justify-between p-2">
             <div className="flex h-[17px] items-center">
-              <span className="mr-2">
+              <span className="mr-2 min-w-[20px]">
                 <Image
                   src={item.icon}
                   alt={item.title}
