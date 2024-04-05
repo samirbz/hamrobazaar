@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Login = () => {
   return (
@@ -99,7 +100,9 @@ const Login = () => {
         <div className="py-9 ">
           <span className="my-[9px]  text-[13px]">
             Don&apos;t have an account?{" "}
-            <span className="underline">Sign Up</span>
+            <Link href="/signup" className="underline">
+              Sign Up
+            </Link>
           </span>
         </div>
       </div>
