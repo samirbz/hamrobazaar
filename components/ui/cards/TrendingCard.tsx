@@ -6,7 +6,7 @@ const TrendingCard = () => {
   return (
     <Link
       href="product-detail"
-      className="flex h-[250px] w-[146px] cursor-pointer flex-col gap-3 rounded-md border border-none p-2 transition-all duration-700 hover:rounded-lg hover:border hover:border-[#0170b4] hover:bg-[rgba(1,112,180,.08)]"
+      className="flex h-[250px] w-[146px] cursor-pointer flex-col gap-3 rounded-md  p-2 transition-all duration-700 hover:rounded-lg hover:border hover:border-[#0170b4] hover:bg-[rgba(1,112,180,.08)]"
     >
       <div className="h-[122px] w-[130px] ">
         <Image
