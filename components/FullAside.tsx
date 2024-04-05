@@ -6,7 +6,7 @@ import RightAd from "./RightAd";
 
 const FullAside = () => {
   return (
-    <div className="flex w-full flex-wrap items-start">
+    <div className="flex w-full flex-wrap items-start max-lg:w-[81%] max-sm:w-full">
       <div className="flex w-full flex-col">
         <div className="max-md:hidden">
           <TopCategories />
