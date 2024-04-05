@@ -14,6 +14,6 @@
 
 @layer utilities {
   .topCategories-btn {
-    @apply border border-gray-300 rounded-md px-4 py-[6px] mx-2 cursor-pointer transition-all duration-300 w-auto mr-3 inline-block text-sm bg-white;
+    @apply border border-gray-300 rounded-md px-4 py-[6px] mx-2 cursor-pointer transition-all duration-300 w-auto mr-2 inline-block text-sm bg-white;
   }
 }
