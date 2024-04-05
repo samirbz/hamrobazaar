@@ -1,27 +1,34 @@
 import React from "react";
 import Image from "next/image";
 import TopCategories from "@/components/TopCategories";
+import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="sticky top-0 z-50 flex h-20 max-w-[1903px] flex-col items-center justify-center bg-white max-md:h-[120px] max-sm:py-3 max-xs:max-h-[115px] ">
       <div className="flex w-[1320px] max-w-full  items-center px-3 max-md:py-4">
         {/* full logo  */}
-        <div className="mr-[4.5rem] max-lg:hidden lg:min-h-[23.578] lg:min-w-[180px] xl:min-h-[26px] xl:min-w-[200px]">
+        <Link
+          href="/"
+          className="mr-[4.5rem] max-lg:hidden lg:min-h-[23.578] lg:min-w-[180px] xl:min-h-[26px] xl:min-w-[200px]"
+        >
           <Image
             src="images/full-logo.svg"
             width={200}
             height={26.2}
             alt="full logo"
           />
-        </div>
-        <div className="min-h-[36px] min-w-[36px] max-md:mr-3 md:mr-[4.5rem] lg:hidden">
+        </Link>
+        <Link
+          href="/"
+          className="min-h-[36px] min-w-[36px] max-md:mr-3 md:mr-[4.5rem] lg:hidden"
+        >
           <Image
             src="images/half-logo.svg"
             width={36}
             height={36}
             alt="full logo"
           />
-        </div>
+        </Link>
         {/* Half logo  */}
         <div className="rounded-lg border border-black px-[2px]  max-md:mr-[16px] max-md:w-[27rem]  max-sm:mr-0 max-sm:w-full md:mr-[44px] md:w-[37rem]">
           <form className="relative w-full">
@@ -62,10 +69,13 @@ const Navbar = () => {
 
           <div className="mr-[1.625rem] h-0 w-6 rotate-90 border border-black max-md:mr-3"></div>
           <div className="mr-2 mt-px w-[80px] cursor-pointer px-2 py-[6.4px] text-sm hover:text-blue-400 max-md:flex max-md:justify-center max-md:rounded-md max-md:border max-md:border-black">
-            Login
+            <Link href="/login">Login</Link>
           </div>
           <div className="mr-2 flex h-[35.78px] w-20 cursor-pointer justify-center whitespace-nowrap rounded-md border border-black px-2 py-[6.4px] text-sm hover:bg-black hover:text-white max-md:hidden">
-            <span className="mt-px ">Sign Up</span>
+            <span className="mt-px ">
+              {" "}
+              <Link href="/signup">Sign Up</Link>
+            </span>
           </div>
         </div>
       </div>
