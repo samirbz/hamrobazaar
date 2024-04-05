@@ -7,8 +7,11 @@ const GoLeftRight = () => {
 
     // Check if the container exists
     if (container) {
-      // Scroll the container to the left
-      container.scrollLeft -= 100; // Adjust the value as needed
+      // Scroll the container to the left with smooth animation
+      container.scrollTo({
+        left: container.scrollLeft - 600, // Adjust the value as needed
+        behavior: "smooth",
+      });
     }
   };
 
@@ -18,8 +21,11 @@ const GoLeftRight = () => {
 
     // Check if the container exists
     if (container) {
-      // Scroll the container to the right
-      container.scrollLeft += 100; // Adjust the value as needed
+      // Scroll the container to the right with smooth animation
+      container.scrollTo({
+        left: container.scrollLeft + 600, // Adjust the value as needed
+        behavior: "smooth",
+      });
     }
   };
 

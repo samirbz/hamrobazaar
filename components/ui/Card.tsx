@@ -3,14 +3,16 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className="flex h-[250] w-[146px] cursor-pointer flex-col gap-3 rounded-md p-2 transition-all duration-700 hover:rounded-lg hover:border hover:border-[#0170b4] hover:bg-[rgba(1,112,180,.08)]">
-      <Image
-        src="https://picsum.photos/130/122"
-        width={130}
-        height={122}
-        alt="image"
-        className="rounded-md"
-      />
+    <div className="flex h-[250px] w-[146px] cursor-pointer flex-col gap-3 rounded-md border border-none p-2 transition-all duration-700 hover:rounded-lg hover:border hover:border-[#0170b4] hover:bg-[rgba(1,112,180,.08)]">
+      <div className="h-[122px] w-[130px] ">
+        <Image
+          src="https://picsum.photos/130/122"
+          width={130}
+          height={122}
+          alt="image"
+          className="rounded-lg"
+        />
+      </div>
       <div className="flex">
         <h3 className="text-[13px] font-semibold leading-4">
           Land Cruiser prado

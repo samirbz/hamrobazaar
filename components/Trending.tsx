@@ -39,7 +39,7 @@ const Trending = () => {
       <div className="my-[6px] h-px bg-gray-300"></div>
       <div
         id="scrollableContainer"
-        className="hideScrollbar absolute top-[55px] flex w-[98.3%] overflow-x-scroll"
+        className="hideScrollbar absolute top-[55px] flex w-[98.3%] gap-2 overflow-x-scroll"
       >
         <Card />
         <Card />
