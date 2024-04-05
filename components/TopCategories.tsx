@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useState, MouseEvent } from "react";
-import SavedBtn from "./ui/SavedBtn";
+import SavedBtn from "./ui/btn/SavedBtn";
 import Image from "next/image";
 
 const TopCategories: React.FC = () => {

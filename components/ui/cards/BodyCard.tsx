@@ -1,9 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-const Card2 = () => {
+const BodyCard = () => {
   return (
-    <div className="flex min-w-[120px] flex-col gap-3 rounded-md   transition-all duration-500 ">
+    <Link
+      href="/product-detail"
+      className="flex min-w-[120px] flex-col gap-3 rounded-md   transition-all duration-500 "
+    >
       <div className="flex w-full cursor-pointer justify-start gap-2.5 p-2 transition-all duration-700 hover:rounded-lg hover:border hover:border-[#0170b4] hover:bg-[rgba(1,112,180,.08)]">
         <div className="flex flex-col items-center">
           <div className="w-[130px] ">
@@ -68,8 +72,8 @@ const Card2 = () => {
         </div>
       </div>
       <div className="my-[15px] h-px w-full bg-gray-300 pl-2 pr-4"></div>
-    </div>
+    </Link>
   );
 };
 
-export default Card2;
+export default BodyCard;

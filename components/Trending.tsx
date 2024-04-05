@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Card from "./ui/Card";
-import GoLeftRight from "./ui/GoLeftRight"; // Import the GoLeftRight component
+import TrendingCard from "./ui/cards/TrendingCard";
+import GoLeftRight from "./ui/btn/GoLeftRight"; // Import the GoLeftRight component
 
 const Trending = () => {
   return (
@@ -41,18 +41,28 @@ const Trending = () => {
         id="scrollableContainer"
         className="hideScrollbar absolute top-[55px] flex w-[98.3%] gap-2 overflow-x-scroll"
       >
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
+        <TrendingCard />
       </div>
     </div>
   );

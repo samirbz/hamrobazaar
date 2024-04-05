@@ -1,7 +1,7 @@
 import React from "react";
 import HomeHeader from "./HomeHeader";
 import TabContent from "./TabContent";
-import GoTop from "./ui/GoTop";
+import GoTop from "./ui/btn/GoTop";
 
 const HomeListing = () => {
   return (

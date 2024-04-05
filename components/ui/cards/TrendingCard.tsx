@@ -1,9 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-const Card = () => {
+const TrendingCard = () => {
   return (
-    <div className="flex h-[250px] w-[146px] cursor-pointer flex-col gap-3 rounded-md border border-none p-2 transition-all duration-700 hover:rounded-lg hover:border hover:border-[#0170b4] hover:bg-[rgba(1,112,180,.08)]">
+    <Link
+      href="product-detail"
+      className="flex h-[250px] w-[146px] cursor-pointer flex-col gap-3 rounded-md border border-none p-2 transition-all duration-700 hover:rounded-lg hover:border hover:border-[#0170b4] hover:bg-[rgba(1,112,180,.08)]"
+    >
       <div className="h-[122px] w-[130px] ">
         <Image
           src="https://picsum.photos/130/122"
@@ -66,8 +70,8 @@ const Card = () => {
           ></path>
         </svg>
       </div>
-    </div>
+    </Link>
   );
 };
 
-export default Card;
+export default TrendingCard;

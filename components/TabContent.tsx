@@ -1,38 +1,34 @@
 import React from "react";
-import Card2 from "./ui/Card2";
+import BodyCard from "./ui/cards/BodyCard";
 
 const TabContent = () => {
   return (
     <div>
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
+      <BodyCard />
     </div>
   );
 };
